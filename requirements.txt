@@ -1,16 +1,5 @@
-# Core Dependencies
-python-dotenv
-pandas
-streamlit
-
-# LLM & RAG
-groq
-chromadb
-langchain
-langchain-community
-sentence-transformers
-huggingface_hub
-
-# Email Sending
-smtplib
-email-validator
+streamlit==1.30.0
+pandas==2.0.3
+chromadb==0.4.5
+pymupdf==1.23.3
+openpyxl==3.1.2
