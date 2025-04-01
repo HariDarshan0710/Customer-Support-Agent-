@@ -531,11 +531,15 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 # Load environment variables
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+# GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_MODEL = "gemma2-9b-it"
-SENDER_EMAIL = os.getenv("EMAIL_USER")
-SENDER_PASSWORD = os.getenv("EMAIL_PASS")
+# SENDER_EMAIL = os.getenv("EMAIL_USER")
+# SENDER_PASSWORD = os.getenv("EMAIL_PASS")
 ADMIN_PASSWORD = "admin123"  # Change this to a secure password
+
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+EMAIL_USER = st.secrets["EMAIL_USER"]
+EMAIL_PASS = st.secrets["EMAIL_PASS"]
 
 # Initialize ChromaDB client
 chroma_client = chromadb.PersistentClient(path="./chroma_db")
