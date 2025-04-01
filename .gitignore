@@ -1,0 +1,30 @@
+# Ignore environment variables file
+.env
+
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore log files
+*.log
+
+# Ignore database files
+*.db
+*.sqlite
+chroma_db/
+
+# Ignore virtual environment
+.venv/
+env/
+venv/
+
+# Ignore test output or temporary files
+test_output/
+*.bak
+*.swp
+
+# Ignore other project-specific files
+app.py
+fix_db.py
+proj_structure.py
+test.py

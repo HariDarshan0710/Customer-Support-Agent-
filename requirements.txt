@@ -1,0 +1,16 @@
+# Core Dependencies
+python-dotenv
+pandas
+streamlit
+
+# LLM & RAG
+groq
+chromadb
+langchain
+langchain-community
+sentence-transformers
+huggingface_hub
+
+# Email Sending
+smtplib
+email-validator
